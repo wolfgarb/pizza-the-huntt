@@ -63,6 +63,9 @@ const handlePizzaSubmit = (event) => {
     })
     .catch((err) => {
       console.log(err);
+      // save record method that grabs the data from our formData variable
+      // will be stored in the new_pizza object store in db 'pizza_hunt'
+      saveRecord(formData);
     });
 };
 
